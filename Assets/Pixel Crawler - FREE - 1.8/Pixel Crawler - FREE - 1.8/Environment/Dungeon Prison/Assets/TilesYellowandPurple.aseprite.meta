@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 57f937711da82e545b2448ed851033c1
+guid: d41f6c1c6d45512439808236e3b9d577
 ScriptedImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -35,7 +35,7 @@ ScriptedImporter:
     spriteMeshType: 1
     alignment: 0
     spritePivot: {x: 0.5, y: 0.5}
-    spritePixelsToUnits: 100
+    spritePixelsToUnits: 16
     spriteBorder: {x: 0, y: 0, z: 0, w: 0}
     spriteGenerateFallbackPhysicsShape: 0
     generateCubemap: 6
@@ -97,7 +97,7 @@ ScriptedImporter:
     addSortingGroup: 1
     addShadowCasters: 0
   importFileNodeState: 1
-  platformSettingsDirtyTick: 0
+  platformSettingsDirtyTick: 638664237226126905
   textureAssetName: 
   singleSpriteImportData:
   - name: 
@@ -122,19 +122,19 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: 0, y: 0}
   animatedSpriteImportData:
-  - name: Frame_0
+  - name: TilesYellowandPurple
     originalName: 
-    pivot: {x: 0.5037133, y: 0.006220768}
+    pivot: {x: 0.13315217, y: -0.002832861}
     alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
+    border: {x: 0, y: 0, z: 271, w: 288}
     customData: 
     rect:
       serializedVersion: 2
       x: 4
       y: 4
-      width: 19
-      height: 29
-    spriteID: 1a7fa70077ceb3d40ab149b9855c0cc4
+      width: 368
+      height: 353
+    spriteID: 03232d96e9147cc4cbda8591abdb32d3
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -143,114 +143,24 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 4, y: 4}
-  - name: Frame_1
-    originalName: 
-    pivot: {x: 0.57894737, y: 0}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    customData: 
-    rect:
-      serializedVersion: 2
-      x: 4
-      y: 77
-      width: 19
-      height: 27
-    spriteID: a59268edb62462d458e01a3a3ed2e5e3
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 4, y: 77}
-  - name: Frame_2
-    originalName: 
-    pivot: {x: 0.57894737, y: 0}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    customData: 
-    rect:
-      serializedVersion: 2
-      x: 31
-      y: 4
-      width: 19
-      height: 27
-    spriteID: 2ced180b6ee9f7c42b5cfbb8382ad384
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 31, y: 4}
-  - name: Frame_3
-    originalName: 
-    pivot: {x: 0.57894737, y: 0}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    customData: 
-    rect:
-      serializedVersion: 2
-      x: 4
-      y: 41
-      width: 19
-      height: 28
-    spriteID: d13826b6a7c702945944af2b260c80e7
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 4, y: 41}
   spriteSheetImportData: []
   asepriteLayers:
   - layerIndex: 0
-    guid: 161112836
-    name: Idle
+    guid: 378839686
+    name: TilesYellowandPurple
     layerFlags: 0
     layerType: 0
     blendMode: 0
     cells:
-    - name: Frame_0
+    - name: TilesYellowandPurple
       frameIndex: 0
       additiveSortOrder: 0
       cellRect:
-        x: 5
-        y: 0
-        width: 19
-        height: 29
-      spriteId: 1a7fa70077ceb3d40ab149b9855c0cc4
-    - name: Frame_1
-      frameIndex: 1
-      additiveSortOrder: 0
-      cellRect:
-        x: 5
-        y: 0
-        width: 19
-        height: 27
-      spriteId: a59268edb62462d458e01a3a3ed2e5e3
-    - name: Frame_2
-      frameIndex: 2
-      additiveSortOrder: 0
-      cellRect:
-        x: 5
-        y: 0
-        width: 19
-        height: 27
-      spriteId: 2ced180b6ee9f7c42b5cfbb8382ad384
-    - name: Frame_3
-      frameIndex: 3
-      additiveSortOrder: 0
-      cellRect:
-        x: 5
-        y: 0
-        width: 19
-        height: 28
-      spriteId: d13826b6a7c702945944af2b260c80e7
+        x: 0
+        y: 1
+        width: 368
+        height: 353
+      spriteId: 03232d96e9147cc4cbda8591abdb32d3
     linkedCells: []
     parentIndex: -1
   platformSettings:
@@ -266,7 +176,43 @@ ScriptedImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     androidETC2FallbackOverride: 0
+  - name: DefaultTexturePlatform
+    overridden: 0
+    ignorePlatformSupport: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  - name: Standalone
+    overridden: 0
+    ignorePlatformSupport: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  - name: WebGL
+    overridden: 0
+    ignorePlatformSupport: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
   generatePhysicsShape: 0
   secondarySpriteTextures: []
   spritePackingTag: 
-  canvasSize: {x: 32, y: 32}
+  canvasSize: {x: 98, y: 67}
