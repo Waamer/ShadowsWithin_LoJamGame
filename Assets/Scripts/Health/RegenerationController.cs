@@ -4,10 +4,10 @@ using UnityEngine;
 public class RegenerationController : MonoBehaviour
 {
     [SerializeField]
-    private float _regenerationAmountPerSecond; // Amount of health to regenerate per second
+    private float _regenerationAmountPerSecond;
 
     [SerializeField]
-    private float _regenerationDelay; // Time to wait after taking damage before starting regeneration
+    private float _regenerationDelay;
 
     private HealthController _healthController;
     private Coroutine _regenerationCoroutine;

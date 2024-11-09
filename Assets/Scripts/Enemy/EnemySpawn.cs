@@ -25,7 +25,6 @@ public class EnemySpawn : MonoBehaviour
 
         if (theTime <= 0)
         {
-            // Spawn the enemy
             GameObject enemy = Instantiate(_enemyPrefab, transform.position, Quaternion.identity);
             _currentSpawnCount++;
             theTime = _timeUntilSpawn;

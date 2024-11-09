@@ -50,6 +50,9 @@ MonoBehaviour:
   damageAngle: 45
   weaponAnimator: {fileID: 4302242934560749967}
   delay: 0.5
+  Audio: {fileID: 0}
+  weaponSwing: {fileID: 0}
+  weaponHit: {fileID: 0}
 --- !u!1 &2030200347501206571
 GameObject:
   m_ObjectHideFlags: 0

@@ -30,7 +30,7 @@ public class Dialogue : MonoBehaviour
     }
 
     void StartDialogue() {
-        OnDialogueStart?.Invoke(); // Trigger start event
+        OnDialogueStart?.Invoke();
         index = 0;
         StartCoroutine(TypeLine());
     }
@@ -48,7 +48,7 @@ public class Dialogue : MonoBehaviour
             textComponent.text = string.Empty;
             StartCoroutine(TypeLine());
         } else {
-            OnDialogueEnd?.Invoke(); // Trigger end event
+            OnDialogueEnd?.Invoke();
             gameObject.SetActive(false);
         }
     }

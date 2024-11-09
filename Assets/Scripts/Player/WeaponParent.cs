@@ -5,9 +5,9 @@ using UnityEngine;
 public class WeaponParent : MonoBehaviour
 {
     public Vector2 PointerPosition { get; set; }
-    public float baseDamageAmount = 10f; // Base damage amount (before any multipliers)
-    public float attackRange = 2f; // Range to detect enemies
-    public float damageAngle = 45f; // Angle range within which enemies are damaged
+    public float baseDamageAmount = 10f;
+    public float attackRange = 2f;
+    public float damageAngle = 45f;
 
     public Animator weaponAnimator;
     public float delay = 1f;
@@ -20,7 +20,7 @@ public class WeaponParent : MonoBehaviour
 
     private void Start()
     {
-        currentDamageAmount = baseDamageAmount; // Initialize current damage to base value
+        currentDamageAmount = baseDamageAmount;
     }
 
     private void Update()
@@ -35,8 +35,7 @@ public class WeaponParent : MonoBehaviour
         scale.y = difference.x < 0 ? -1 : 1;
         transform.localScale = scale;
 
-        // Optionally call the damage function (e.g., when the player attacks)
-        if (Input.GetMouseButtonDown(0)) // Replace with your attack trigger logic
+        if (Input.GetMouseButtonDown(0))
         {
             Attack();
             DamageEnemiesInDirection(difference);
@@ -45,19 +44,17 @@ public class WeaponParent : MonoBehaviour
 
     private void DamageEnemiesInDirection(Vector2 direction)
     {
-        // Get all enemies within a certain range
         Collider2D[] hitColliders = Physics2D.OverlapCircleAll(transform.position, attackRange);
 
         foreach (var hitCollider in hitColliders)
         {
-            if (hitCollider.CompareTag("Enemy")) // Ensure only enemies are considered
+            if (hitCollider.CompareTag("Enemy"))
             {
                 Vector2 toEnemy = (hitCollider.transform.position - transform.position).normalized;
                 float angleToEnemy = Vector2.Angle(direction, toEnemy);
 
                 if (angleToEnemy <= damageAngle)
                 {
-                    // Damage the enemy if it is within the allowed angle range
                     var enemyHealth = hitCollider.GetComponent<HealthController>();
                     if (enemyHealth != null)
                     {
@@ -68,13 +65,11 @@ public class WeaponParent : MonoBehaviour
         }
     }
 
-    // Method to apply the damage multiplier
     public void ApplyDamageMultiplier(float multiplier)
     {
         currentDamageAmount = baseDamageAmount * multiplier;
     }
 
-    // Method to reset the damage multiplier
     public void ResetDamageMultiplier()
     {
         currentDamageAmount = baseDamageAmount;

@@ -8,7 +8,6 @@ public class PlayerRegeneration : MonoBehaviour
         _regenerationController = GetComponent<RegenerationController>();
     }
 
-    // Call this when the player takes damage
     public void OnPlayerDamaged() {
         _regenerationController.StartRegeneration();
     }

@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class GamePauseManager : MonoBehaviour
 {
-    [SerializeField] private MonoBehaviour[] scriptsToDisable; // Array of all scripts to disable
+    [SerializeField] private MonoBehaviour[] scriptsToDisable;
 
     private void OnEnable()
     {
