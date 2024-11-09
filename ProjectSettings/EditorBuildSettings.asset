@@ -6,6 +6,12 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/Main Menu.unity
+    guid: afa5765947a576f4e91ba85b3738d7fb
+  - enabled: 1
+    path: Assets/Scenes/IntroCutscene.unity
+    guid: ccb10366edf35234782248ff9c1c9ff6
+  - enabled: 1
     path: Assets/Scenes/Area 1 (Sloth Blue).unity
     guid: 8c9cfa26abfee488c85f1582747f6a02
   - enabled: 1
