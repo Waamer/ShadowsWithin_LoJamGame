@@ -1,3 +1,5 @@
+using System;
+using System.Collections;
 using UnityEngine;
 
 public class WeaponParent : MonoBehaviour
@@ -6,6 +8,13 @@ public class WeaponParent : MonoBehaviour
     public float baseDamageAmount = 10f; // Base damage amount (before any multipliers)
     public float attackRange = 2f; // Range to detect enemies
     public float damageAngle = 45f; // Angle range within which enemies are damaged
+
+    public Animator weaponAnimator;
+    public float delay = 1f;
+    private bool attackBlocked;
+
+    public AudioSource Audio;
+    public AudioClip weaponSwing, weaponHit;
 
     private float currentDamageAmount;
 
@@ -29,6 +38,7 @@ public class WeaponParent : MonoBehaviour
         // Optionally call the damage function (e.g., when the player attacks)
         if (Input.GetMouseButtonDown(0)) // Replace with your attack trigger logic
         {
+            Attack();
             DamageEnemiesInDirection(difference);
         }
     }
@@ -58,13 +68,6 @@ public class WeaponParent : MonoBehaviour
         }
     }
 
-    private void OnDrawGizmosSelected()
-    {
-        // Draw a circle to visualize the attack range in the editor
-        Gizmos.color = Color.red;
-        Gizmos.DrawWireSphere(transform.position, attackRange);
-    }
-
     // Method to apply the damage multiplier
     public void ApplyDamageMultiplier(float multiplier)
     {
@@ -75,5 +78,20 @@ public class WeaponParent : MonoBehaviour
     public void ResetDamageMultiplier()
     {
         currentDamageAmount = baseDamageAmount;
+    }
+
+    public void Attack() {
+        if (attackBlocked) {
+            return;
+        }
+        weaponAnimator.SetTrigger("Attack");
+        attackBlocked = true;
+        StartCoroutine(DelayAttack());
+    }
+
+    private IEnumerator DelayAttack()
+    {
+        yield return new WaitForSeconds(delay);
+        attackBlocked = false;
     }
 }

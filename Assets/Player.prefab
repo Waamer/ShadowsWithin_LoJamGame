@@ -45,9 +45,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 29251e93a8ec57f4792e4daf4bac9bc4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damageAmount: 10
-  attackRange: 20
+  baseDamageAmount: 10
+  attackRange: 2
   damageAngle: 45
+  weaponAnimator: {fileID: 4302242934560749967}
+  delay: 0.5
 --- !u!1 &2030200347501206571
 GameObject:
   m_ObjectHideFlags: 0
@@ -145,6 +147,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5798337392554432088}
   - component: {fileID: 1178074257969719303}
+  - component: {fileID: 4302242934560749967}
   m_Layer: 0
   m_Name: Weapon
   m_TagString: Untagged
@@ -161,8 +164,8 @@ Transform:
   m_GameObject: {fileID: 5443741014435233656}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.36, y: 0.17, z: 0}
-  m_LocalScale: {x: 2.5, y: 2, z: 1}
+  m_LocalPosition: {x: 0.36, y: -0.188, z: 0}
+  m_LocalScale: {x: 0.65, y: 0.7, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 5469739651283919069}
@@ -211,7 +214,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -2067898546876541913, guid: 663ab3fea125cb448a1fe188d001d688, type: 3}
+  m_Sprite: {fileID: 2820724737959456099, guid: 56524528c61eb534080cc59ce2f79c2b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -222,6 +225,28 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &4302242934560749967
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5443741014435233656}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 382f8b670d394404d9acded8f7a6025e, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &7369595874027612011
 GameObject:
   m_ObjectHideFlags: 0
@@ -241,12 +266,9 @@ GameObject:
   - component: {fileID: 4603845935025374095}
   - component: {fileID: 4371554932702092705}
   - component: {fileID: 2414352587535577958}
-  - component: {fileID: 2110874565034765990}
-  - component: {fileID: 857632391290863428}
-  - component: {fileID: 7631284880467701358}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -553,51 +575,3 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f6661e8bf8ea034888e00aa0fdf5c24, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &2110874565034765990
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7369595874027612011}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 43558cb6b004fb1429db7ed8dba712e9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _currentCooldown: 0
-  _maximumCooldown: 8
-  _boostDuration: 3
-  _speedMultiplier: 2
---- !u!114 &857632391290863428
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7369595874027612011}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ce81a2cecec0f4545b8a0bcf409f04f2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _currentCooldown: 0
-  _maximumCooldown: 8
-  _damageIncreaseDuration: 2
-  _damageMultiplier: 2
---- !u!114 &7631284880467701358
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7369595874027612011}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a89026cd4a8734947a55b373a0ab8ddd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _currentCooldown: 0
-  _maximumCooldown: 4
-  _dodgeDuration: 0.1
-  _speedMultiplier: 5

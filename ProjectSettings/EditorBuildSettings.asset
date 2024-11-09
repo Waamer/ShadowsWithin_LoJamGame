@@ -8,6 +8,18 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Area 1 (Sloth Blue).unity
     guid: 8c9cfa26abfee488c85f1582747f6a02
+  - enabled: 1
+    path: Assets/Scenes/Area 2 (Envy Green).unity
+    guid: 0b476c63a3fff7746a9eb2a9785761b0
+  - enabled: 1
+    path: Assets/Scenes/Area 3 (Greed Gold).unity
+    guid: 1950cc9ae06aa53428671a81f0bf4fdb
+  - enabled: 1
+    path: Assets/Scenes/Area 4 (Pride Purple).unity
+    guid: 5908f895648869c44a9f758a22f7322b
+  - enabled: 1
+    path: Assets/Scenes/Area 5 (Wrath Red).unity
+    guid: 635248b3d7512d345a944818ceab1b7c
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 718c6092d1c34f3479a40bfe448e545d, type: 3}
   m_UseUCBPForAssetBundles: 0
