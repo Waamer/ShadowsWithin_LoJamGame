@@ -2,9 +2,11 @@ using UnityEngine;
 using UnityEngine.Video;
 using UnityEngine.SceneManagement;
 using System.Collections;
+using System.IO;
 
 public class VideoSceneLoader : MonoBehaviour
 {
+    [SerializeField] string videoFileName;
     public VideoPlayer videoPlayer;
     public Animator transitionAnimator;
 
@@ -12,8 +14,19 @@ public class VideoSceneLoader : MonoBehaviour
     {
         if (videoPlayer != null)
         {
-            videoPlayer.Play();
+            PlayVideo();
             videoPlayer.loopPointReached += OnVideoEnd;
+        }
+    }
+
+    public void PlayVideo()
+    {
+        if (videoPlayer)
+        {
+            string videoPath = Path.Combine(Application.streamingAssetsPath, videoFileName);
+            Debug.Log(videoPath);
+            videoPlayer.url = videoPath;
+            videoPlayer.Play();
         }
     }
 

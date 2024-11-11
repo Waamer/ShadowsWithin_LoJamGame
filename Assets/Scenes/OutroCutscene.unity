@@ -379,6 +379,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32ab24bfd626e814cb674798848838fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  videoFileName: Outro.mp4
   videoPlayer: {fileID: 1968388928}
   transitionAnimator: {fileID: 0}
 --- !u!4 &1968388930
