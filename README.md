@@ -1,5 +1,5 @@
 # Shadows Within
-Group members: Shiv, Talha, Tsid Tomori, James, and of course myself
+Group members: Shivanish Kushwaha, Talha Chaudhry, Tsid Tomori, James Johnson, and of course myself Waleed Aamer
 ## Description of Game
 Shadows Within is a 2D top down pixel game where the the main character, Ethan, faces emotional obstacles embodied by enemies from his delusions representing the 7 deadly sins and negative emotions. Each challenge, from Sloth to Wrath, mirrors Ethan's past struggles, forcing him to confront his own pain and regrets. Shadows Within's core message is that these obstacles are not barriers but part of the journey—each enemy defeated brings the character closer to self-acceptance and inner peace. "Obstacles do not block the path, they are the path" is embodied in every level, where overcoming personal turmoil leads to growth, symbolized by gaining new abilities and transforming Ethan’s understanding of their past.
 
